@@ -1,0 +1,57 @@
+/* navbar */
+
+
+/* Theme */
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --font-color:#222232;
+    --nav-fixed:#000254;
+  }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.nav-header{
+  color:darkgreen;
+}
+.icon-box{
+  background-color:rgb(204,247,238);
+  color:rgb(10,217,171);
+  border-radius: 75%;
+}
+
+
+.nav-fixed.main{
+  top: 120px;
+  left: 0;
+  right:0;
+  margin:auto;
+
+  color: white;
+  border-radius: 3px;
+  background-color: var(--nav-fixed);
+}
+
+/* header */
+
+
+
+.header-text{
+  color:var(--nav-fixed)
+}
+
+/* container 1 */
+
+#main-container{
+  background-image:linear-gradient(#00000086,#000000b9),url("/img/cover-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+  
+}
