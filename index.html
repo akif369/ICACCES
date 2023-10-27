@@ -55,14 +55,21 @@
         </div>
       </div>
       <nav
-        class="flex list-none font-semibold text-md w-2/3 absolute mx-auto nav-fixed main justify-center p-3 py-5"
+        class="flex dropdown list-none font-semibold text-md w-2/3 absolute mx-auto nav-fixed main justify-center p-3 py-5"
       >
         <li><a class="p-3 m-2" href="#">Home</a></li>
         <li><a class="p-3 m-2" href="#">About </a></li>
         <li><a class="p-3 m-2" href="#">Commitee</a></li>
         <li><a class="p-3 m-2" href="#">Registration</a></li>
         <li><a class="p-3 m-2" href="#">Speaker</a></li>
-        <li><a class="p-3 m-2" href="#">Key Topic</a></li>
+        <li><a class="p-3 m-2" href="#" >Key Topic <i class="fa-solid fa-caret-down"></i></a>
+            <!-- <ul class="dropdown-content" role="menu">
+              <li style="--delay: 1;"><a href="#">React</a></li>
+              <li style="--delay: 2;"><a href="#">Angular</a></li>
+              <li style="--delay: 3;"><a href="#">Vue</a></li>
+              <li style="--delay: 4;"><a href="#">Svelte</a></li>
+            </ul>
+        </li> -->
         <li><a class="p-3 m-2" href="#">Contact Us</a></li>
       </nav>
     </header>
@@ -146,8 +153,8 @@
       </div>
     </section>
 
-    <!-- <section id="About-section">
-      <h1>About Academic Partner</h1>
+     <section id="About-section"  class="flex flex-col justify-center m-24">
+      <h1  class="self-center m-8 text-4xl font-bold">About Academic Partner</h1>
       <p>
         Conference Awards for Short Invited Lectures & Posters The conference
         organizers will provide three best presentation awards for the best
@@ -157,18 +164,19 @@
       </p>
     </section>
 
-    <section id="date-section">
-      <h1>Importance Dates</h1>
-      <div>
-        <div><h1>Abstract Submission Deadline</h1><h2>18th October 2023</h2></div>
-        <div><h1>Final Registration Deadline</h1><h2>18th October 2023</h2></div>y
+    
+    <section id="date-section" class="flex flex-col justify-center m-24">
+      <h1  class="self-center m-8 text-4xl font-bold">Importance Dates</h1>
+      <div class="flex justify-around my-5">
+        <div class="dates-box p-5"><h1  class="text-xl ">Abstract Submission <br/>Deadline</h1><h2 class="text-xl font-bold">18th October 2023</h2></div>
+        <div class="dates-box p-5"><h1  class="text-xl ">Final Registration Deadline</h1><h2  class="text-xl font-bold">18th October 2023</h2></div>y
 
       </div>
     </section>
 
     <footer>
 
-    </footer>  -->
+    </footer>  
 
     <script src="script.js"></script>
   </body>
