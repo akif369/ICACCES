@@ -60,12 +60,37 @@ body {
 
 
 .dates-box{
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  border: solid #ea580c 1px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+  border: solid #ea580c 1.8px;
   border-radius: 4px;
   text-align: center;
+}
+
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  margin:0 10px ;
+  padding: 20px;
+  padding-bottom: 0;
+  color: white;
+  background-color: var(--nav-fixed);
 
 }
+.dropdown-content li{
+  padding: 3px 0;
+}
+
+.drop-list:hover .dropdown-content{
+  display: block;
+}
+
+.dropdown-content {
+  filter: brightness(100%);
+
+}
+
+
 
  /* .dates-box::before {
   content: "";
