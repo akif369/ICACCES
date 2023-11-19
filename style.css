@@ -16,7 +16,6 @@ body {
   box-sizing: border-box;
   font-family: sans-serif;
 }
-
 .nav-header{
   color:darkgreen;
 }
@@ -25,8 +24,10 @@ body {
   color:rgb(10,217,171);
   border-radius: 75%;
 }
-
-
+a:hover {
+  color:white;
+  text-decoration: none;
+}
 .nav-fixed.main{
   top: 120px;
   left: 0;
@@ -39,7 +40,6 @@ body {
 }
 
 /* header */
-
 
 
 .header-text{

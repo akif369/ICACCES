@@ -13,13 +13,29 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet"
+          href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+    <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
+ 
+    <!-- Tailwind CSS CDN Links -->
+    <link href=
+"https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+          rel="stylesheet"> 
   </head>
   <body class="mx-4">
-    <header>
-      <div class="nav-header flex justify-between">
+    <header class="hidden lg:inline-block">
+      <div class="nav-header flex justify-between ">
         <h1 class="text-3xl font-bold p-5 font-mono">ICACCES</h1>
 
         <div class="flex">
@@ -60,23 +76,104 @@
       <nav
         class="flex dropdown list-none font-semibold text-md w-2/3 absolute mx-auto nav-fixed main justify-center p-3 py-4"
       >
-        <li><a class="p-3 m-2" href="#">Home</a></li>
-        <li><a class="p-3 m-2" href="#">About </a></li>
-        <li><a class="p-3 m-2" href="#">Commitee</a></li>
-        <li><a class="p-3 m-2" href="#">Registration</a></li>
-        <li><a class="p-3 m-2" href="#">Speaker</a></li>
-        <li class="drop-list"><a class="p-3 m-2" style="position: relative;" href="#" >Key Topic <i class="fa-solid fa-caret-down"></i></a>
+        <li><a class="p-3 m-2 hover:text-zinc-50 text-decoration-none" href="/">Home</a></li>
+        <li><a class="p-3 m-2 hover:text-zinc-50 text-decoration-none" href="#">About </a></li>
+        <li><a class="p-3 m-2 hover:text-zinc-50 text-decoration-none" href="#">Commitee</a></li>
+        <li><a class="p-3 m-2 hover:text-zinc-50 text-decoration-none" href="register.html">Registration</a></li>
+        <li><a class="p-3 m-2 hover:text-zinc-50  text-decoration-none" href="#">Speaker</a></li>
+        <li class="drop-list"><a class="p-3 m-2 hover:text-zinc-50  text-decoration-none" style="position: relative;" href="#" >Key Topic <i class="fa-solid fa-caret-down"></i></a>
 
         <ul class="dropdown-content" role="menu">
-          <li style="--delay: 1;"><a href="#">Computer Science and Engineering</a></li>
-          <li style="--delay: 2;"><a href="#">Electronics and Communication</a></li>
-          <li style="--delay: 3;"><a href="#">Electrical and Electronics </a></li>
+          <li style="--delay: 1;"><a class="hover:text-zinc-50  text-decoration-none" href="#">Computer Science and Engineering</a></li>
+          <li style="--delay: 2;"><a class="hover:text-zinc-50 text-decoration-none"href="#">Electronics and Communication</a></li>
+          <li style="--delay: 3;"><a class="hover:text-zinc-50 text-decoration-none" href="#">Electrical and Electronics </a></li>
         </ul>
 
 
         </li>
-        <li><a class="p-3 m-2" href="#">Contact Us</a></li>
+        <li><a class="p-3 m-2 hover:text-zinc-50  text-decoration-none" href="#">Contact Us</a></li>
       </nav>
+    </header>
+
+    <header class="hidden max-sm:block mobile">
+      <!-- component -->
+<div class="group inline-block">
+  <button
+    class="outline-none focus:outline-none border px-3 py-1 bg-white rounded-sm flex items-center min-w-32"
+  >
+    <span class="pr-1 font-semibold flex-1">MENU</span>
+    <span>
+      <svg
+        class="fill-current h-4 w-4 transform group-hover:-rotate-180
+        transition duration-150 ease-in-out"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+      >
+        <path
+          d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+        />
+      </svg>
+    </span>
+  </button>
+  <ul
+    class="bg-white border rounded-sm transform scale-0 group-hover:scale-100 absolute 
+  transition duration-150 ease-in-out origin-top min-w-32"
+  >
+    <li class="rounded-sm px-3 py-1 hover:bg-gray-100">About</li>
+    <li class="rounded-sm px-3 py-1 hover:bg-gray-100">Registraion</li>
+    <li class="rounded-sm relative px-3 py-1 hover:bg-gray-100">
+      <button
+        class="w-full text-left flex items-center outline-none focus:outline-none"
+      >
+        <span class="pr-1 flex-1">Key Topic</span>
+        <span class="mr-auto">
+          <svg
+            class="fill-current h-4 w-4
+            transition duration-150 ease-in-out"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+            />
+          </svg>
+        </span>
+      </button>
+      <ul
+        class="bg-white border rounded-sm absolute top-0 right-0 
+  transition duration-150 ease-in-out origin-top-left
+  min-w-32
+  "
+      >
+        <li class="px-3 py-1 hover:bg-gray-100">Computer Science and Engineering</li>
+        <li class="px-3 py-1 hover:bg-gray-100">Electronics and Communication</li>
+        <li class="px-3 py-1 hover:bg-gray-100">Electrical and Electronics </li>
+      </ul>
+    </li>
+    <li class="rounded-sm px-3 py-1 hover:bg-gray-100">Contact Us</li>
+  </ul>
+</div>
+
+<style>
+  /* since nested groupes are not supported we have to use 
+     regular css for the nested dropdowns 
+  */
+  .mobile li>ul                 { transform: translatex(100%) scale(0) }
+  .mobile li:hover>ul           { transform: translatex(101%) scale(1) }
+  .mobile li > button svg       { transform: rotate(-90deg) }
+  .mobile li:hover > button svg { transform: rotate(-270deg) }
+
+  /* Below styles fake what can be achieved with the tailwind config
+     you need to add the group-hover variant to scale and define your custom
+     min width style.
+  	 See https://codesandbox.io/s/tailwindcss-multilevel-dropdown-y91j7?file=/index.html
+  	 for implementation with config file
+  */
+  .group:hover .group-hover\:scale-100 { transform: scale(1) }
+  .group:hover .group-hover\:-rotate-180 { transform: rotate(180deg) }
+  .scale-0 { transform: scale(0) }
+  .min-w-32 { min-width: 8rem }
+</style>
     </header>
 
     <section id="main-container" class="py-24">
@@ -87,9 +184,9 @@
         Abstract Submission, Registration
       </h3>
       <div class="m-3 my-10  mt-18">
-        <a href="#" class="text-xl font-bold rounded-md bg-green-500 p-3 px-5">Registraion</a>
-        <a href="#" class="text-xl font-bold rounded-md bg-blue-500 p-3 px-5 mx-1">Download Brochure</a>
-        <a href="#" class="text-xl font-bold rounded-md bg-green-500 p-3 px-5 ">Contact US</a>
+        <a href="#" class="text-xl   hover:text-zinc-50  text-decoration-none font-bold rounded-md bg-green-500 p-3 px-5">Registraion</a>
+        <a href="#" class="text-xl  hover:text-zinc-50  text-decoration-none font-bold rounded-md bg-blue-500 p-3 px-5 mx-1">Download Brochure</a>
+        <a href="#" class="text-xl hover:text-zinc-50  text-decoration-none font-bold rounded-md bg-green-500 p-3 px-5 ">Contact US</a>
       </div>
 
       <div class="flex justify-center mt-32 cursor-pointer ">
@@ -182,7 +279,7 @@
     <div class="footer-dark">
       <footer>
           <div class="container">
-              <div class="row">
+              <div class="flex ">
                   <div class="col-sm-6 col-md-3 item">
                       <h3>Services</h3>
                       <ul>
@@ -209,9 +306,6 @@
           </div>
       </footer>
   </div>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
