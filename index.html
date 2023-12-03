@@ -517,27 +517,177 @@
       </p>
     </section>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-screen-lg mx-auto my-16">
+
+    <section>
+      <div>
+        <h1 class="self-center m-8 text-4xl font-bold text-center my-16">
+          SPEAKERS
+          <!-- role here -->
+        </h1>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          style="height: 450px"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators text-blue-900">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div
+                class="member flex flex-col flex-wrap justify-center items-center"
+              >
+                <img
+                  src="img/0.jpg"
+                  style="
+                    width: 260px;
+                    border-radius: 3px;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                  "
+                />
+                <h4 class="mt-3 text-2xl">
+                  <a href="#" class="font-bold" style="color: #000254">
+                    <!-- Name here -->
+                    Dr. Muhammad Ameen
+                  </a>
+                </h4>
+                <div class="text-center font-sans font-light">
+                  <!-- role -->
+                  Post-Doctoral Research
+                  <br />National University, Singapore
+                  <br />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="member flex flex-col flex-wrap justify-center items-center"
+              >
+                <img
+                  src="img/1.jpg"
+                  style="
+                    width: 260px;
+                    border-radius: 3px;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                  "
+                />
+                <h4 class="mt-3 text-2xl">
+                  <a href="#" class="font-bold" style="color: #000254"
+                    >Dr. M. Sabarimalai Manikandan
+                    <!-- name here -->
+                  </a>
+                </h4>
+                <div class="text-center font-sans font-light">
+                  <!-- before comma here -->
+                 Associate Professor 
+                 <br />IIT Palakkad, India<br />
+                  <!-- after comma role -->
+                </div>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <div
+                class="member flex flex-col flex-wrap justify-center items-center"
+              >
+                <img
+                  src="img/2.jpg"
+                  style="
+                    width: 260px;
+                    border-radius: 3px;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                  "
+                />
+                <h4 class="mt-3 text-2xl">
+                  <a href="#" class="font-bold" style="color: #000254"
+                    >Dr. Anishin Raj M.M
+                  </a>
+                </h4>
+                <div class="text-center font-sans font-light">
+                  <!-- before comma here -->
+                  Muthoot Institute of Science and Technology<br />India <br />
+                  <!-- after comma here -->
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="member flex flex-col flex-wrap justify-center items-center"
+              >
+                <img
+                  src="img/3.jpg"
+                  style="
+                    width: 260px;
+                    border-radius: 3px;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                  "
+                />
+                <h4 class="mt-3 text-2xl">
+                  <a href="#" class="font-bold" style="color: #000254"
+                    >Dr. Sreenath Sukumaran
+                  </a>
+                </h4>
+                <div class="text-center font-sans font-light">
+                  <!-- before comma here -->
+                  Tallinn University of Technology. <br />Estonia <br />
+                  <!-- after comma here -->
+                </div>
+              </div>
+            </div>
+        
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <i class="fa-solid fa-chevron-left text-blue-900 text-3xl"></i>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <i class="fa-solid fa-chevron-right text-blue-900 text-3xl"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-screen-lg mx-auto my-16  ">
 
       <!-- Abstract Submission Card -->
-      <div class="bg-blue-950 text-white p-8 rounded-lg shadow-lg flex flex-col items-center justify-center">
-          <h2 class="text-3xl font-semibold mb-4">Abstract Submission</h2>
-          <p class="text-lg">Deadline: 15 December 2023</p>
+      <div class="dates-box bg-orange-300 p-5 flex flex-col items-center justify-center">
+          <h2 class="text-2xl mb-4">Abstract Submission Deadline</h2>
+          <p class="text-xl font-black">15 December 2023</p>
       </div>
 
       <!-- Full Paper Submission Card -->
-      <div class="bg-blue-950 text-white p-8 rounded-lg shadow-lg flex flex-col items-center justify-center">
-          <h2 class="text-3xl font-semibold mb-4">Full Paper Submission</h2>
-          <p class="text-lg">Deadline: 5 January 2024</p>
+      <div class="dates-box bg-orange-300 p-5 flex-col items-center justify-center">
+          <h2 class="text-2xl  mb-4">Full Paper Submission <br/> Deadline</h2>
+          <p class="text-xl font-black"> 5 January 2024</p>
       </div>
 
       <!-- Registration Fee Submission Card -->
-      <div class="bg-blue-950 text-white p-8 rounded-lg shadow-lg flex flex-col items-center justify-center">
-          <h2 class="text-3xl font-semibold mb-4">Registration Fee Submission</h2>
-          <p class="text-lg">Deadline: 15 January 2024</p>
+      <div class="dates-box bg-orange-300 p-5 flex flex-col items-center justify-center">
+          <h2 class="text-2xl  mb-4">Registration Fee Submission Deadline</h2>
+          <p class="text-xl font-black">15 January 2024</p>
       </div>
 
   </div>
+
+
 
     <section
       class="container mx-auto p-8 bg-white rounded-md shadow-md text-lg"
